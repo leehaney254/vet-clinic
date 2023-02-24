@@ -39,7 +39,7 @@ FOREIGN KEY(owners_id)
 REFERENCES owners(id)
 ON DELETE CASCADE;
 
--- Create a table named pets
+-- Create a table named vets
 CREATE TABLE vets (
  id SERIAL PRIMARY KEY,
  name VARCHAR(200),
@@ -61,7 +61,6 @@ CREATE TABLE specializations (
     REFERENCES vets(id)
      ON UPDATE CASCADE
 );
-
 
 -- Joining a joining between animals and vets
 CREATE TABLE visits (
