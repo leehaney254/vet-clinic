@@ -14,13 +14,13 @@ ALTER TABLE animals ADD species varchar(200);
 
 CREATE TABLE owners(
   id SERIAL PRIMARY KEY,
-  full_name varchar(200),
+  full_name VARCHAR(200),
   age INT
 );
 
 CREATE TABLE species (
   id SERIAL PRIMARY KEY,
-  name varchar(200)
+  name VARCHAR(200)
 );
 
 ALTER TABLE animals DROP COLUMN species;
@@ -38,3 +38,40 @@ ADD CONSTRAINT fk_owners
 FOREIGN KEY(owners_id)
 REFERENCES owners(id)
 ON DELETE CASCADE;
+
+-- Create a table named vets
+CREATE TABLE vets (
+ id SERIAL PRIMARY KEY,
+ name VARCHAR(200),
+ age INT,
+ date_of_graduation DATE
+);
+
+-- Create a joining between species and vet 
+CREATE TABLE specializations (
+  species_id INT NOT NULL,
+  vets_id INT NOT NULL,
+  CONSTRAINT fk_species
+   FOREIGN KEY(species_id)
+    REFERENCES species(id)
+     ON UPDATE CASCADE,
+  CONSTRAINT fk_vets
+   FOREIGN KEY(vets_id)
+    REFERENCES vets(id)
+     ON UPDATE CASCADE
+);
+
+-- Joining a joining between animals and vets
+CREATE TABLE visits (
+  animals_id INT NOT NULL,
+  vets_id INT NOT NULL,
+  date_of_visits DATE,
+  CONSTRAINT fk_animals
+   FOREIGN KEY(animals_id)
+    REFERENCES animals(id)
+     ON UPDATE CASCADE,
+  CONSTRAINT fk_vets
+   FOREIGN KEY(vets_id)
+    REFERENCES vets(id)
+     ON UPDATE CASCADE
+);
