@@ -119,3 +119,7 @@ JOIN vets ON visits.vets_id=vets.id
 JOIN species ON animals.species_id = species.id
 WHERE vets.name='Maisy Smith'
 GROUP BY species.name;
+
+-- Get execution time
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animals_id = 4;
+EXPLAIN ANALYZE  SELECT * FROM visits where vets_id = 2; 

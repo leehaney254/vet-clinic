@@ -22,7 +22,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
-  - [👥 Author ](#-author-)
+  - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -98,13 +98,19 @@ Install this project with:
 - PostgresSQL.
 
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Leehaney George**
 
 - GitHub: [@githubhandle](https://github.com/leehaney254)
 - Twitter: [@twitterhandle](https://twitter.com/Lee06785586)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/leehaney-george-0a4a51178/)
+  
+👤 **Houda MZARI**
+
+-  GitHub: [@houdamzari](https://github.com/houdamzari)
+- LinkedIn: [@houdamzari](https://www.linkedin.com/in/houda-mzari-2304401b1/)
+- Portfolio [@houdamzari](https://houdamzari.github.io/Portfolio-Website/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
