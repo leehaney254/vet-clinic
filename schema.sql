@@ -2,7 +2,7 @@
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
-  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name  VARCHAR(70),
   date_of_birth DATE,
   escape_attempts INT,
@@ -75,3 +75,16 @@ CREATE TABLE visits (
     REFERENCES vets(id)
      ON UPDATE CASCADE
 );
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX animals_visits_idx ON visits(animal_id);
+
+CREATE INDEX vets_visits_idx ON visits(vet_id);
+
+CREATE INDEX owners_visits_idx ON owners(email); 
