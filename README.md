@@ -118,8 +118,8 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add commands**
-- [ ] **Add functionality**
+- [ ] **Populate db**
+- [ ] **Add querries**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
