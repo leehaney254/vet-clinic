@@ -2,7 +2,7 @@
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
-  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY ,
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
   name  VARCHAR(70),
   date_of_birth DATE,
   escape_attempts INT,
