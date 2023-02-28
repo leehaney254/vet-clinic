@@ -53,7 +53,7 @@ CREATE TABLE medical_histories_treatment (
   CONSTRAINT fk_medical_histories
    FOREIGN KEY(medical_histories_id) REFERENCES medical_histories(id),
   CONSTRAINT fk_treatments
-   FOREIGN KEY(treatments_id) REFERENCES treatments_id
+   FOREIGN KEY(treatments_id) REFERENCES treatments(id)
 );
 
 -- Create a foreign key index
